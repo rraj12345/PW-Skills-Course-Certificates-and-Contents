@@ -1,94 +1,86 @@
-# PW Skills – Data Analytics Learning Portfolio
+# PW Skills | Data Analytics Learning Portfolio
 
-A collection of coursework, practice assignments, and learning resources completed during data analytics training with PW Skills. This repository brings together SQL, Python, statistics, and data visualization exercises.
+A curated archive of coursework and practical exercises completed during PW Skills data analytics training. The repository brings SQL, Python, statistics, and visualization practice into one place.
 
-> **Repository purpose:** A learning and practice portfolio. These files document coursework and hands-on exercises; they are not presented as one end-to-end business project.
+## Repository at a glance
 
-## Repository contents
-
-| Area | Files | What you will find |
+| Area | Files | Main content |
 |---|---:|---|
-| SQL | 5 | Sakila/Maven Movies database, SQL scripts, assignment PDFs, and schema reference |
-| Python & data analysis | 4 | NumPy, statistics, data visualization notebooks, and Python reference material |
-| Certification | 1 | PW Skills course certificate |
+| SQL and relational databases | 5 | Database schema, SQL practice, assignment references |
+| Python and analytics | 4 | Python reference, NumPy, statistics, visualization |
+| Certification | 1 | Course certificate |
+| **Total** | **10** | **Learning resources and practice artifacts** |
 
-## File-by-file guide
+## Problem
 
-### 1. SQL and database learning
+Coursework is often spread across separate scripts, notebooks, PDFs, and reference images. Without a clear index, it takes time for a learner or reviewer to understand what each file contains, how the materials connect, and where to begin.
 
-#### [Mavenmovies.sql](Mavenmovies.sql)
-A MySQL database setup script based on the **Sakila sample database**, used in the Maven Movies learning exercises. It creates the `mavenmovies` schema and defines the relational database structure, including tables such as actors, films, customers, stores, rentals, payments, addresses, cities, countries, and categories. It also includes primary keys, foreign keys, indexes, and relationships between tables. Use it to understand how a multi-table relational database is structured before writing analytical queries.
+## Solution
 
-#### [sql_assignment.sql](sql_assignment.sql)
-A collection of SQL assignment answers and query exercises. It begins with table creation and data-integrity constraints (such as primary key, unique, check, not-null, and default constraints), then moves into joins between tables, aggregation, filtering, sorting, and querying the Maven Movies/Sakila schema. The script includes practice questions around actors, customers, films, rentals, inventory, payments, categories, and stores. It is useful for revising SQL syntax and practicing how to translate business-style questions into queries.
+This repository consolidates those materials and documents each artifact. It is a learning portfolio, not a production analytics solution or a single end-to-end business case.
 
-#### [PW_SQL_Assignment.pdf](PW_SQL_Assignment.pdf)
-A PDF copy of SQL assignment material from the PW Skills coursework. It serves as the written assignment/reference counterpart to the SQL practice files and can be used to review the questions and compare them with the SQL exercises in this repository.
+## File guide
 
-#### [SQL Assignment.pdf](SQL%20Assignment.pdf)
-An additional SQL assignment/reference PDF. It is kept separately because it is a distinct course document from `PW_SQL_Assignment.pdf`. Refer to it for the written SQL exercises and course material associated with the database practice.
+### SQL and database learning
 
-#### [Schema.png](Schema.png)
-A visual database schema reference for the relational database exercises. It helps identify tables, key columns, and the relationships used when writing joins. Keep it open alongside `Mavenmovies.sql` and `sql_assignment.sql` when tracing how entities such as films, actors, customers, inventory, rentals, and payments connect.
+- **[Mavenmovies.sql](Mavenmovies.sql)** — MySQL setup script based on the Sakila sample database. It creates the `mavenmovies` schema and relational tables for films, actors, customers, stores, rentals, payments, addresses, locations, and categories, with keys, indexes, and relationships.
+- **[sql_assignment.sql](sql_assignment.sql)** — SQL practice answers. Topics include table creation, constraints, primary and foreign keys, filtering, pattern matching, joins, aggregation, grouping, window functions, normalization, and CTEs. Example questions analyze customers, films, rentals, categories, and store revenue.
+- **[PW_SQL_Assignment.pdf](PW_SQL_Assignment.pdf)** — PDF assignment/reference material for the SQL coursework. Use it to review the written exercises alongside the SQL scripts.
+- **[SQL Assignment.pdf](SQL%20Assignment.pdf)** — A separate SQL assignment/reference PDF retained as a distinct course resource.
+- **[Schema.png](Schema.png)** — Visual database schema reference showing tables and relationships; useful when planning joins across the Maven Movies/Sakila database.
 
-### 2. Python, statistics, and visualization
+### Python, statistics, and visualization
 
-#### [Numpy Assignment.ipynb](Numpy%20Assignment.ipynb)
-A Jupyter Notebook containing question-based practice in **NumPy**. The exercises introduce array creation and data types (integer, float, and complex), type conversion, and array properties such as shape, size, and data type. The notebook continues with common array operations and manipulation tasks. It is suitable for practicing numerical data handling and understanding how NumPy arrays differ from standard Python lists.
+- **[Python Basics.pdf](Python%20Basics.pdf)** — Python fundamentals reference material that supports the notebook exercises.
+- **[Numpy Assignment.ipynb](Numpy%20Assignment.ipynb)** — Question-based NumPy practice covering array creation, integer/float/complex data types, type conversion, array attributes, dimensions, strides, zeros/ones/identity arrays, ranges, concatenation, stacking, indexing, slicing, reshaping, arithmetic, string operations, and summary calculations.
+- **[Statistics_Assignment_PwSkills.ipynb](Statistics_Assignment_PwSkills.ipynb)** — Python-based statistics exercises. The notebook uses NumPy, Pandas, SciPy, Matplotlib, Seaborn, and Python's statistics module for descriptive measures and statistical problem-solving, including central tendency and dispersion.
+- **[Visualization.ipynb](Visualization.ipynb)** — Visualization assignments organized around Matplotlib, Seaborn, Plotly, and Bokeh. Exercises cover common chart forms such as scatter, line, and bar plots and practice presenting data visually.
 
-#### [Statistics_Assignment_PwSkills.ipynb](Statistics_Assignment_PwSkills.ipynb)
-A Jupyter Notebook focused on statistical concepts and their implementation in Python. It includes exercises on generating sample data and calculating measures such as mean, median, mode, weighted mean, and geometric mean, along with further statistical analysis tasks. The notebook uses libraries including NumPy, Pandas, SciPy, Matplotlib, and Seaborn. It provides practice connecting statistical definitions with calculations and Python code.
+### Certification
 
-#### [Visualization.ipynb](Visualization.ipynb)
-A Jupyter Notebook containing data visualization exercises, beginning with Matplotlib and chart creation (including scatter plots) and extending into visualization with Python plotting libraries. The exercises demonstrate how to represent relationships, distributions, and patterns in data visually. It is useful for practicing chart selection, plotting syntax, and communicating observations from datasets.
+- **[PwSkills Certification.pdf](PwSkills%20Certification.pdf)** — PW Skills course certificate. Refer to the PDF for the exact credential details.
 
-#### [Python Basics.pdf](Python%20Basics.pdf)
-A PDF learning resource for Python fundamentals. It complements the Python notebooks by providing a reference for core language concepts before moving into numerical computing, statistics, and visualization.
+## Approach
 
-### 3. Certificate
+1. **Understand the data model:** Start with `Mavenmovies.sql` and `Schema.png` to understand entities, keys, and relationships.
+2. **Practice SQL:** Use `sql_assignment.sql` and the assignment PDFs to work through data retrieval, joins, aggregation, and analytical queries.
+3. **Build Python foundations:** Review `Python Basics.pdf`, then work through the NumPy notebook.
+4. **Apply statistical thinking:** Use the statistics notebook to calculate and interpret descriptive measures and statistical results.
+5. **Communicate with charts:** Explore the visualization notebook and compare chart types for different analytical questions.
 
-#### [PwSkills Certification.pdf](PwSkills%20Certification.pdf)
-The PW Skills course certificate document associated with the learning material in this repository. It is included as supporting evidence of course completion; consult the PDF itself for the exact certificate details.
+## Results and learning outcomes
 
-## Topics covered
+The repository provides a set of reusable learning artifacts across **4 subject areas**: SQL, Python/NumPy, statistics, and data visualization. It demonstrates practice with relational data structures, analytical SQL patterns, numerical arrays, statistical calculations, and visual communication.
 
-- **SQL and relational databases:** Schema creation, primary and foreign keys, constraints, joins, filtering, aggregation, and analytical queries.
-- **Python fundamentals:** Core Python concepts and notebook-based programming practice.
-- **NumPy:** Arrays, data types, array attributes, conversion, and numerical operations.
-- **Statistics:** Measures of central tendency and other statistical exercises using Python libraries.
-- **Data visualization:** Creating plots to explore and communicate patterns in data.
+These are coursework outputs. No business KPI improvement, production deployment, or quantified commercial impact is claimed.
 
-## Tools and libraries
+## Tools
 
-- MySQL / SQL
-- Python 3
-- NumPy
-- Pandas
-- Matplotlib
-- Seaborn
-- SciPy
+MySQL | Python 3 | NumPy | Pandas | SciPy | Matplotlib | Seaborn | Plotly | Bokeh | Jupyter Notebook / Google Colab
 
-## How to use
+## Run the notebooks
 
-1. Browse the SQL scripts and PDFs to review database concepts and assignment questions.
-2. Open the `.ipynb` notebooks in Jupyter Notebook, JupyterLab, or Google Colab.
-3. Install the libraries required by the notebooks before running the cells. A typical starting point is:
+Open the `.ipynb` files in Jupyter Notebook, JupyterLab, or Google Colab. A starting set of dependencies is:
 
-   ```bash
-   pip install numpy pandas matplotlib seaborn scipy
-   ```
+```bash
+pip install numpy pandas scipy matplotlib seaborn plotly bokeh
+```
 
-4. For the Maven Movies SQL exercises, create or load the required schema in a compatible MySQL environment. Use `Schema.png` to understand table relationships before running joins.
+For SQL practice, use a compatible MySQL environment and load the required schema before running queries.
 
-## Notes
+## Next actions
 
-- This repository is an archive of learning exercises, course references, and certification material.
-- PDF descriptions above identify the documents by their repository role; consult each PDF for its exact question-by-question contents.
-- Notebook outputs and library behavior may vary with Python and package versions.
-- The original assignment files are preserved. This README is documentation only; it does not change the contents of the SQL scripts, notebooks, PDFs, or image.
+- Re-run selected exercises with fresh test cases and verify the outputs.
+- Extend SQL questions with business-style metrics such as rental frequency, customer value, and category performance.
+- Add concise interpretations below statistical outputs and visualizations.
+- Keep future projects in separate folders or repositories with a clear problem statement, methodology, and findings.
+
+## Repository notes
+
+- The PDFs are described by their role in the course; consult each document for its exact page-by-page contents.
+- Results in notebooks may depend on package versions and random data generation.
+- Original coursework files are retained. This README documents them; it does not change their contents.
 
 ## Author
 
-**Raj Kishore Agrawal**
-
-[GitHub profile](https://github.com/rraj12345)
+**Raj Kishore Agrawal** · [GitHub](https://github.com/rraj12345)
